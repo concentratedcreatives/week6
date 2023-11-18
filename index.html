@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title -->
+    <title>Weather Overview</title>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <header>
+        <h1 class="center">Weather Overview</h1>
+    </header>
+
+    <!-- Container -->
+    <div class="container">
+        <div class="row">
+            <!-- Left panel for City search and recently viewed cities -->
+            <div class="left-panel">
+                <div class="city-search">
+                    <h2>Search for a Place:</h2>
+                    <form id="search-form">
+                        <input id="city" type="text">
+                        <button class="btn" type="submit">Search</button>
+                    </form>
+                    <h2>Previously Searched:</h2>
+                    <ul id="recently-viewed"></ul>
+                </div>
+            </div>
+
+            <!-- Right panel for Current city weather and 5-Day Forecast -->
+            <div class="right-panel">
+                <div class="current-weather">
+                    <section>
+                        <h2 id="current-city"></h2>
+                        <span id="current-date"></span>
+                        <p id="current-icon"></p>
+                        <p id="current-temperature"></p>
+                        <p id="current-wind"></p>
+                        <p id="current-humidity"></p>
+                    </section>
+
+                    <h2>5-Day Forecast:</h2>
+                    <div class="forecast-day" id="day-1"><p></p></div>
+                    <div class="forecast-day" id="day-2"><p></p></div>
+                    <div class="forecast-day" id="day-3"><p></p></div>
+                    <div class="forecast-day" id="day-4"><p></p></div>
+                    <div class="forecast-day" id="day-5"><p></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Your custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
